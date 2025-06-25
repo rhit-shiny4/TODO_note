@@ -1,0 +1,19 @@
+
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg);
+
+    /* 기본적으론 flex는 min height을 100%으로 설정해서, 
+    만약 lsit의 갯수가 넘어가게 되면, 컨텐츠가 짤리는 현상을 방지해 줌
+    
+     */
+    min-height: 0;
+}
+
+.list{
+    flex:1 1 auto;
+overflow-y: auto;
+}
